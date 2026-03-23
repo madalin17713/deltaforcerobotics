@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIRST Robotics Competition - Delta Force Robotics</title>
+    <link rel="stylesheet" href="css/first-robotics-competition.css">
+    <link rel="stylesheet" href="fonts/orbitron-rajdhani.css">
+    <script src="libs/three.min.js"></script>
+    <script src="libs/gsap.min.js"></script>
+    <script src="libs/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.png" alt="Delta Force Robotics" class="logo-img">
+                <span class="logo-text">DELTA FORCE</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">ACASĂ</a></li>
+                <li><a href="index.html#about" class="nav-link">DESPRE</a></li>
+                <li><a href="index.html#projects" class="nav-link">PROIECTE</a></li>
+                <li><a href="index.html#team" class="nav-link">ECHIPĂ</a></li>
+                <li><a href="index.html#contact" class="nav-link">CONTACT</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-hero">
+        <div id="canvas-container"></div>
+        <div class="project-hero-content">
+            <div class="project-number-large">02</div>
+            <h1>FIRST ROBOTICS COMPETITION</h1>
+            <p class="project-subtitle">Cea Mai Prestigioasă Competiție Internațională</p>
+            <div class="project-hero-stats">
+                <div class="stat">
+                    <span class="stat-number">25+</span>
+                    <span class="stat-label">MEMBRI</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">120kg</span>
+                    <span class="stat-label">ROBOT</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">Java</span>
+                    <span class="stat-label">PROGRAMARE</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-details">
+        <div class="container">
+            <div class="details-grid">
+                <div class="details-content">
+                    <h2>Despre FIRST Robotics Competition</h2>
+                    <p>FIRST Robotics Competition (FRC) este cea mai prestigioasă competiție internațională de robotică pentru liceeni. Echipele au doar 6 săptămâni pentru a proiecta, construi și programa un robot de 120kg care concurează într-un joc complex ce se schimbă anual.</p>
+                    
+                    <h3>Provocările Competiției</h3>
+                    <ul class="objectives-list">
+                        <li><span class="bullet">⏱️</span> Timp limită de construcție: 6 săptămâni</li>
+                        <li><span class="bullet">🏗️</span> Robot de 120kg cu dimensiuni stricte</li>
+                        <li><span class="bullet">🎮</span> Joc complex cu obiective multiple</li>
+                        <li><span class="bullet">🌍</span> Competiții regionale, naționale și internaționale</li>
+                    </ul>
+
+                    <h3>Tehnologii Avansate</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <div class="tech-icon">⚡</div>
+                            <h4>C++</h4>
+                            <p>Programare de înaltă performanță pentru control în timp real</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">🐍</div>
+                            <h4>Python</h4>
+                            <p>Viziune computerizată și procesare imagine</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">🔧</div>
+                            <h4>Mechanical Design</h4>
+                            <p>Proiectare CAD avansată și simulare</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">⚙️</div>
+                            <h4>Pneumatics</h4>
+                            <p>Sisteme pneumatice pentru mișcări precise</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details-visual">
+                    <div class="robot-showcase">
+                        <div class="robot-placeholder">
+                            <div class="robot-icon">🤖</div>
+                            <p>Robot FRC</p>
+                        </div>
+                    </div>
+                    <div class="achievements">
+                        <h3>Realizări</h3>
+                        <div class="achievement-list">
+                            <div class="achievement-item">
+                                <span class="achievement-icon">🏆</span>
+                                <span>Campion Regional 2023</span>
+                            </div>
+                            <div class="achievement-item">
+                                <span class="achievement-icon">🥈</span>
+                                <span>Vicecampion Național</span>
+                            </div>
+                            <div class="achievement-item">
+                                <span class="achievement-icon">🌟</span>
+                                <span>Premiul Chairman</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-gallery">
+        <div class="container">
+            <h2 class="section-title">Galerie</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span>🏭</span>
+                        <p>Atelier de construcție</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span>⚙️</span>
+                        <p>Sisteme mecanice</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span>🎯</span>
+                        <p>Testare și calibrare</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span>🏟️</span>
+                        <p>Competiții internaționale</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Alătură-te Revoluției Robotice!</h2>
+                <p>Fă parte din echipa care reprezintă România pe scena internațională a robotică!</p>
+                <div class="cta-buttons">
+                    <a href="index.html#contact" class="cta-primary">CONTACTEAZĂ-NE</a>
+                    <a href="index.html#projects" class="cta-secondary">ALTE PROIECTE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Delta Force Robotics" class="footer-logo-img">
+                    <span class="logo-text">DELTA FORCE ROBOTICS</span>
+                </div>
+                <div class="footer-social">
+                    <span class="social-link">📘</span>
+                    <span class="social-link">📷</span>
+                    <span class="social-link">🐦</span>
+                    <span class="social-link">💼</span>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Delta Force Robotics. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/first-robotics-competition.js"></script>
+    <script>
+        // Initialize 3D background for project page
+        init3DBackground();
+        
+        // Project page specific animations
+        gsap.from('.project-number-large', {
+            scale: 0,
+            opacity: 0,
+            duration: 1,
+            ease: 'back.out(1.7)'
+        });
+        
+        gsap.from('.project-hero-content h1', {
+            y: 50,
+            opacity: 0,
+            duration: 1,
+            delay: 0.3
+        });
+        
+        gsap.from('.project-subtitle', {
+            y: 30,
+            opacity: 0,
+            duration: 1,
+            delay: 0.5
+        });
+        
+        gsap.from('.project-hero-stats .stat', {
+            scale: 0,
+            opacity: 0,
+            duration: 0.8,
+            stagger: 0.1,
+            delay: 0.7
+        });
+    </script>
+</body>
+</html>

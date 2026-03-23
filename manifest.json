@@ -1,0 +1,48 @@
+{
+  "name": "Delta Force Robotics Website",
+  "short_name": "Delta Force",
+  "description": "Echipa de robotică Delta Force din Arad - Competiții FIRST și inovație tehnologică",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#ff6b35",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "ro",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["education", "technology", "robotics"],
+  "shortcuts": [
+    {
+      "name": "FIRST Tech Challenge",
+      "short_name": "FTC",
+      "description": "Detalii despre competiția FIRST Tech Challenge",
+      "url": "/first-tech-challenge.html",
+      "icons": [{ "src": "logo.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "FIRST Robotics Competition", 
+      "short_name": "FRC",
+      "description": "Detalii despre competiția FIRST Robotics Competition",
+      "url": "/first-robotics-competition.html",
+      "icons": [{ "src": "logo.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "FIRST Global Challenge",
+      "short_name": "FGC", 
+      "description": "Detalii despre competiția FIRST Global Challenge",
+      "url": "/first-global-challenge.html",
+      "icons": [{ "src": "logo.png", "sizes": "96x96" }]
+    }
+  ]
+}

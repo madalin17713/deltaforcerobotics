@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIRST Tech Challenge - Delta Force Robotics</title>
+    <link rel="stylesheet" href="css/first-tech-challenge.css">
+    <link rel="stylesheet" href="fonts/orbitron-rajdhani.css">
+    <script src="libs/three.min.js"></script>
+    <script src="libs/gsap.min.js"></script>
+    <script src="libs/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.png" alt="Delta Force Robotics" class="logo-img">
+                <span class="logo-text">DELTA FORCE ROBOTICS</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link"></a></li>
+                <li><a href="index.html#about" class="nav-link">DESPRE</a></li>
+                <li><a href="index.html#projects" class="nav-link">PROIECTE</a></li>
+                <li><a href="index.html#team" class="nav-link">ECHIPĂ</a></li>
+                <li><a href="index.html#contact" class="nav-link">CONTACT</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-hero">
+        <div id="canvas-container"></div>
+        <div class="project-hero-content">
+            <div class="project-number-large">01</div>
+            <h1>FIRST TECH CHALLENGE</h1>
+            <p class="project-subtitle">Inovație și Tehnologie pentru Liceeni</p>
+            <div class="project-hero-stats">
+                <div class="stat">
+                    <span class="stat-number">160+</span>
+                    <span class="stat-label">ȚĂRI</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">🌍</span>
+                    <span class="stat-label">GLOBAL</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">AI</span>
+                    <span class="stat-label">TEHNOLOGIE</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-details">
+        <div class="container">
+            <div class="details-grid">
+                <div class="details-content">
+                    <h2>Despre FIRST Tech Challenge</h2>
+                    <p>FIRST Tech Challenge (FTC) este o competiție de robotică destinată elevilor de liceu (clasele 7-12), unde echipele de până la 15 membri proiectează, construiesc, programează și operează roboți pentru a concura într-un format de alianță.</p>
+                    
+                    <h3>Obiectivele Competiției</h3>
+                    <ul class="objectives-list">
+                        <li><span class="bullet">🎯</span> Dezvoltarea abilităților de inginerie și programare</li>
+                        <li><span class="bullet">🤝</span> Promovarea muncii în echipă și spiritului competițional</li>
+                        <li><span class="bullet">💡</span> Rezolvarea problemelor complexe prin inovație</li>
+                        <li><span class="bullet">🏆</span> Participare la competiții regionale și naționale</li>
+                    </ul>
+
+                    <h3>Tehnologii Utilizate</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <div class="tech-icon">💻</div>
+                            <h4>Java</h4>
+                            <p>Programare avansată pentru controlul robotului</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">🎨</div>
+                            <h4>CAD Design</h4>
+                            <p>Proiectare 3D cu Autodesk Inventor și Fusion 360</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">🖨️</div>
+                            <h4>3D Printing</h4>
+                            <p>Prototipare rapidă și producție de componente personalizate</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">⚙️</div>
+                            <h4>Mechanics</h4>
+                            <p>Sisteme mecanice complexe și transmisii</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details-visual">
+                    <div class="robot-showcase">
+                        <div class="robot-placeholder">
+                            <div class="robot-icon">🤖</div>
+                            <p>Robot FTC</p>
+                        </div>
+                    </div>
+                    <div class="achievements">
+                        <h3>Realizări</h3>
+                        <div class="achievement-list">
+                            <div class="achievement-item">
+                                <span class="achievement-icon">🥇</span>
+                                <span>Finalist Regional 2023</span>
+                            </div>
+                            <div class="achievement-item">
+                                <span class="achievement-icon">🏅</span>
+                                <span>Premiul pentru Design Inovator</span>
+                            </div>
+                            <div class="achievement-item">
+                                <span class="achievement-icon">⭐</span>
+                                <span>Campionat Național Top 10</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-gallery">
+        <div class="container">
+            <h2 class="section-title">Galerie</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span>📸</span>
+                        <p>Robot în acțiune</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span>🏗️</span>
+                        <p>Proces de construcție</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span>🎮</span>
+                        <p>Control și programare</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span>🏆</span>
+                        <p>Competiții</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Vrei să te alături echipei?</h2>
+                <p>Fă parte din echipa Delta Force Robotics și contribuie la succesul nostru în competițiile FIRST!</p>
+                <div class="cta-buttons">
+                    <a href="index.html#contact" class="cta-primary">CONTACTEAZĂ-NE</a>
+                    <a href="index.html#projects" class="cta-secondary">ALTE PROIECTE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Delta Force Robotics" class="footer-logo-img">
+                    <span class="logo-text">DELTA FORCE ROBOTICS</span>
+                </div>
+                <div class="footer-social">
+                    <span class="social-link">📘</span>
+                    <span class="social-link">📷</span>
+                    <span class="social-link">🐦</span>
+                    <span class="social-link">💼</span>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Delta Force Robotics. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/first-tech-challenge.js"></script>
+    <script>
+        // Initialize 3D background for project page
+        init3DBackground();
+        
+        // Project page specific animations
+        gsap.from('.project-number-large', {
+            scale: 0,
+            opacity: 0,
+            duration: 1,
+            ease: 'back.out(1.7)'
+        });
+        
+        gsap.from('.project-hero-content h1', {
+            y: 50,
+            opacity: 0,
+            duration: 1,
+            delay: 0.3
+        });
+        
+        gsap.from('.project-subtitle', {
+            y: 30,
+            opacity: 0,
+            duration: 1,
+            delay: 0.5
+        });
+        
+        gsap.from('.project-hero-stats .stat', {
+            scale: 0,
+            opacity: 0,
+            duration: 0.8,
+            stagger: 0.1,
+            delay: 0.7
+        });
+    </script>
+</body>
+</html>

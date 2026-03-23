@@ -1,0 +1,351 @@
+/* FIRST GLOBAL CHALLENGE PAGE STYLES */
+
+/* Import base styles */
+@import url('../styles.css');
+
+/* Page specific hero styles */
+.project-hero {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.project-hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 1000px;
+    padding: 0 20px;
+}
+
+.project-number-large {
+    font-family: 'Orbitron', monospace;
+    font-size: 200px;
+    font-weight: 900;
+    color: rgba(255, 107, 53, 0.1);
+    margin-bottom: -50px;
+    line-height: 1;
+}
+
+.project-hero-content h1 {
+    font-family: 'Orbitron', monospace;
+    font-size: 80px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    background: linear-gradient(45deg, var(--primary-color), var(--neon-orange), var(--neon-dark-orange));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 20px;
+}
+
+.project-subtitle {
+    font-size: 24px;
+    color: var(--gray-text);
+    margin-bottom: 40px;
+}
+
+.project-hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.project-hero-stats .stat {
+    text-align: center;
+}
+
+.project-hero-stats .stat-number {
+    font-family: 'Orbitron', monospace;
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--neon-orange);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.project-hero-stats .stat-label {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: var(--gray-text);
+}
+
+/* Project details */
+.project-details {
+    padding: 120px 0;
+    background: var(--dark-bg);
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.details-content h2 {
+    font-family: 'Orbitron', monospace;
+    font-size: 48px;
+    margin-bottom: 30px;
+    color: var(--neon-dark-orange);
+}
+
+.details-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--gray-text);
+    margin-bottom: 40px;
+}
+
+.details-content h3 {
+    font-family: 'Orbitron', monospace;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--neon-gold);
+}
+
+.objectives-list {
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+.objectives-list li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: var(--gray-text);
+}
+
+.bullet {
+    font-size: 20px;
+    color: var(--neon-orange);
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.tech-item {
+    text-align: center;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 107, 53, 0.2);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+    transform: translateY(-5px);
+    border-color: var(--neon-orange);
+    box-shadow: 0 10px 30px rgba(255, 107, 53, 0.2);
+}
+
+.tech-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.tech-item h4 {
+    font-family: 'Orbitron', monospace;
+    font-size: 18px;
+    color: var(--neon-gold);
+    margin-bottom: 10px;
+}
+
+.tech-item p {
+    font-size: 14px;
+    color: var(--gray-text);
+    line-height: 1.5;
+}
+
+.details-visual {
+    position: sticky;
+    top: 100px;
+}
+
+.robot-showcase {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 107, 53, 0.2);
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.robot-placeholder {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(45deg, var(--primary-color), var(--neon-orange));
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.robot-icon {
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+.robot-placeholder p {
+    font-family: 'Orbitron', monospace;
+    font-size: 16px;
+    color: var(--dark-bg);
+    font-weight: 700;
+}
+
+.achievements h3 {
+    font-family: 'Orbitron', monospace;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: var(--neon-gold);
+}
+
+.achievement-list {
+    list-style: none;
+}
+
+.achievement-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 107, 53, 0.2);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.achievement-item:hover {
+    transform: translateX(10px);
+    border-color: var(--neon-orange);
+}
+
+.achievement-icon {
+    font-size: 20px;
+}
+
+/* Gallery */
+.project-gallery {
+    padding: 120px 0;
+    background: linear-gradient(135deg, var(--dark-bg) 0%, #0f0f0f 100%);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.gallery-item {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 107, 53, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    border-color: var(--neon-orange);
+    box-shadow: 0 20px 40px rgba(255, 107, 53, 0.2);
+}
+
+.gallery-placeholder {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, var(--primary-color), var(--neon-orange));
+    color: var(--dark-bg);
+}
+
+.gallery-placeholder span {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.gallery-placeholder p {
+    font-family: 'Orbitron', monospace;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* CTA Section */
+.project-cta {
+    padding: 120px 0;
+    background: var(--dark-bg);
+}
+
+.cta-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-content h2 {
+    font-family: 'Orbitron', monospace;
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: var(--neon-dark-orange);
+}
+
+.cta-content p {
+    font-size: 18px;
+    color: var(--gray-text);
+    margin-bottom: 40px;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .details-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .details-visual {
+        position: static;
+    }
+    
+    .project-hero-content h1 {
+        font-size: 48px;
+    }
+    
+    .project-number-large {
+        font-size: 120px;
+    }
+    
+    .project-hero-stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .tech-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

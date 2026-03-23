@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIRST Global Challenge - Delta Force Robotics</title>
+    <link rel="stylesheet" href="css/first-global-challenge.css">
+    <link rel="stylesheet" href="fonts/orbitron-rajdhani.css">
+    <script src="libs/three.min.js"></script>
+    <script src="libs/gsap.min.js"></script>
+    <script src="libs/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.png" alt="Delta Force Robotics" class="logo-img">
+                <span class="logo-text">DELTA FORCE</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">ACASĂ</a></li>
+                <li><a href="index.html#about" class="nav-link">DESPRE</a></li>
+                <li><a href="index.html#projects" class="nav-link">PROIECTE</a></li>
+                <li><a href="index.html#team" class="nav-link">ECHIPĂ</a></li>
+                <li><a href="index.html#contact" class="nav-link">CONTACT</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-hero">
+        <div id="canvas-container"></div>
+        <div class="project-hero-content">
+            <div class="project-number-large">03</div>
+            <h1>FIRST GLOBAL CHALLENGE</h1>
+            <p class="project-subtitle">Olimpiadă Internațională de Robotică</p>
+            <div class="project-hero-stats">
+                <div class="stat">
+                    <span class="stat-number">160+</span>
+                    <span class="stat-label">ȚĂRI</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">🌍</span>
+                    <span class="stat-label">GLOBAL</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">AI</span>
+                    <span class="stat-label">TEHNOLOGIE</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-details">
+        <div class="container">
+            <div class="details-grid">
+                <div class="details-content">
+                    <h2>Despre FIRST Global Challenge</h2>
+                    <p>FIRST Global Challenge este olimpiada internațională de robotică care aduce împreună echipe din peste 160 de țări pentru a rezolva probleme globale prin tehnologie și inovație. Fiecare an are o temă diferită legată de provocările actuale ale lumii.</p>
+                    
+                    <h3>Misiunea Globală</h3>
+                    <ul class="objectives-list">
+                        <li><span class="bullet">🌍</span> Promovarea colaborării internaționale</li>
+                        <li><span class="bullet">🔬</span> Rezolvarea problemelor globale prin robotică</li>
+                        <li><span class="bullet">🤝</span> Construirea de punți între culturi</li>
+                        <li><span class="bullet">🚀</span> Inspirația următoarei generații de inovatori</li>
+                    </ul>
+
+                    <h3>Tehnologii Inovatoare</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <div class="tech-icon">🧠</div>
+                            <h4>AI & Machine Learning</h4>
+                            <p>Inteligență artificială pentru decizii autonome</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">🌐</div>
+                            <h4>IoT Integration</h4>
+                            <p>Sisteme interconectate și comunicare în rețea</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">🤝</div>
+                            <h4>Global Collaboration</h4>
+                            <p>Colaborare cu echipe din întreaga lume</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">📊</div>
+                            <h4>Data Analytics</h4>
+                            <p>Analiză de date pentru optimizare performanță</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details-visual">
+                    <div class="robot-showcase">
+                        <div class="robot-placeholder">
+                            <div class="robot-icon">🌍</div>
+                            <p>Robot Global</p>
+                        </div>
+                    </div>
+                    <div class="achievements">
+                        <h3>Realizări</h3>
+                        <div class="achievement-list">
+                            <div class="achievement-item">
+                                <span class="achievement-icon">🏅</span>
+                                <span>Medalie de Argint 2023</span>
+                            </div>
+                            <div class="achievement-item">
+                                <span class="achievement-icon">🌟</span>
+                                <span>Premiul pentru Inovație</span>
+                            </div>
+                            <div class="achievement-item">
+                                <span class="achievement-icon">🤝</span>
+                                <span>Ambasadori României</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-gallery">
+        <div class="container">
+            <h2 class="section-title">Galerie</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span>🌍</span>
+                        <p>Reprezentarea României</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span>🤝</span>
+                        <p>Colaborare internațională</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span>🏆</span>
+                        <p>Ceremonia de premiere</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span>🚀</span>
+                        <p>Inovație tehnologică</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Reprezentăm România pe Scena Mondială!</h2>
+                <p>Fă parte din echipa care aduce mândrie României în competițiile internaționale!</p>
+                <div class="cta-buttons">
+                    <a href="index.html#contact" class="cta-primary">CONTACTEAZĂ-NE</a>
+                    <a href="index.html#projects" class="cta-secondary">ALTE PROIECTE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Delta Force Robotics" class="footer-logo-img">
+                    <span class="logo-text">DELTA FORCE ROBOTICS</span>
+                </div>
+                <div class="footer-social">
+                    <span class="social-link">📘</span>
+                    <span class="social-link">📷</span>
+                    <span class="social-link">🐦</span>
+                    <span class="social-link">💼</span>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Delta Force Robotics. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/first-global-challenge.js"></script>
+    <script>
+        // Initialize 3D background for project page
+        init3DBackground();
+        
+        // Project page specific animations
+        gsap.from('.project-number-large', {
+            scale: 0,
+            opacity: 0,
+            duration: 1,
+            ease: 'back.out(1.7)'
+        });
+        
+        gsap.from('.project-hero-content h1', {
+            y: 50,
+            opacity: 0,
+            duration: 1,
+            delay: 0.3
+        });
+        
+        gsap.from('.project-subtitle', {
+            y: 30,
+            opacity: 0,
+            duration: 1,
+            delay: 0.5
+        });
+        
+        gsap.from('.project-hero-stats .stat', {
+            scale: 0,
+            opacity: 0,
+            duration: 0.8,
+            stagger: 0.1,
+            delay: 0.7
+        });
+    </script>
+</body>
+</html>
