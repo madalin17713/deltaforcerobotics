@@ -1,0 +1,44 @@
+{
+  "name": "delta-force-robotics-website",
+  "version": "1.1.0",
+  "description": "Website profesional pentru echipa de robotică Delta Force din Arad",
+  "main": "src/pages/index.html",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "build": "npm run minify-css && npm run minify-js",
+    "minify-css": "cleancss -o dist/assets/css/main.min.css src/assets/css/main.css",
+    "minify-js": "terser src/assets/js/main.js -o dist/assets/js/main.min.js",
+    "serve": "npx serve dist",
+    "deploy": "npm run build && npm run serve"
+  },
+  "keywords": [
+    "robotics",
+    "first",
+    "ftc",
+    "frc",
+    "arad",
+    "delta-force",
+    "competition",
+    "technology"
+  ],
+  "author": "Delta Force Robotics",
+  "license": "MIT",
+  "devDependencies": {
+    "clean-css-cli": "^5.6.2",
+    "terser": "^5.19.2",
+    "serve": "^14.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/delta-force-robotics/website.git"
+  },
+  "homepage": "https://deltforcerobotics.ro",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
