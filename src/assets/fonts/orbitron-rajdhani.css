@@ -1,30 +1,33 @@
-/* Google Fonts - Orbitron & Rajdhani */
+/* Google Fonts - Bebas Neue, Calibri & Impact */
 /* This is a CSS file that would contain the font-face declarations */
 /* In production, you would download the actual font files and create proper @font-face rules */
 
-/* Orbitron Font Family */
+/* Bebas Neue Font Family - For Titles */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Calibri Font Family - For Body Text */
 @font-face {
-    font-family: 'Orbitron';
+    font-family: 'Calibri';
     font-style: normal;
     font-weight: 400;
-    src: local('Orbitron Regular'), local('Orbitron-Regular'), url(https://fonts.gstatic.com/s/orbitron/v16/yMJMMIlzdpvBhQQL_SC3X9yhF25-T1yG.woff2) format('woff2');
+    src: local('Calibri'), local('Calibri-Regular'), url(https://fonts.cdnfonts.com/s/14669/calibri.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
-    font-family: 'Orbitron';
+    font-family: 'Calibri';
     font-style: normal;
     font-weight: 700;
-    src: local('Orbitron Bold'), local('Orbitron-Bold'), url(https://fonts.gstatic.com/s/orbitron/v16/yMJWMIlzpvpBhQQL_SC3X9yhF25-T1yFYU.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    src: local('Calibri Bold'), local('Calibri-Bold'), url(https://fonts.cdnfonts.com/s/14669/calibri-bold.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U:02DA, U:02DC, U:2000-206F, U:2074, U:20AC, U:2122, U:2191, U:2193, U:2212, U:2215, U:FEFF, U:FFFD;
 }
 
+/* Impact Font Family - For Logo (Bold and Strong) */
 @font-face {
-    font-family: 'Orbitron';
+    font-family: 'Impact';
     font-style: normal;
-    font-weight: 900;
-    src: local('Orbitron Black'), local('Orbitron-Black'), url(https://fonts.gstatic.com/s/orbitron/v16/yMJWMIlzpvpBhQQL_SC3X9yhF25-T1yGcY.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    font-weight: 400;
+    src: local('Impact'), local('Impact-Regular');
 }
 
 /* Rajdhani Font Family */

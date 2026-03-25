@@ -29,10 +29,10 @@ function throttle(func, limit) {
 // Preload critical images
 function preloadImages() {
     const criticalImages = [
-        'logo.png',
-        'ftc_section_photo.jpg',
-        'frc_secton_photo.jpg',
-        'fgc_section_photo.png'
+        '../assets/images/logo.png',
+        '../assets/images/ftc_section_photo.jpg',
+        '../assets/images/frc_secton_photo.jpg',
+        '../assets/images/fgc_section_photo.png'
     ];
     
     criticalImages.forEach(src => {
@@ -603,6 +603,129 @@ document.querySelectorAll('img').forEach(img => {
             ease: 'power2.out'
         });
     });
+});
+
+// TEAM MODAL FUNCTIONS
+function openTeamModal(name, role, photo, description, skills) {
+    const modal = document.getElementById('teamModal');
+    const modalContent = modal ? modal.querySelector('.modal-content') : null;
+    const modalName = document.getElementById('modalName');
+    const modalRole = document.getElementById('modalRole');
+    const modalPhoto = document.getElementById('modalPhoto');
+    const modalDescription = document.getElementById('modalDescription');
+    const modalSkills = document.getElementById('modalSkills');
+    
+    // Set modal content
+    modalName.textContent = name;
+    modalRole.textContent = role;
+    modalPhoto.src = photo;
+    modalPhoto.alt = name;
+    modalDescription.innerHTML = `<p>${description}</p>`;
+    
+    // Set skills
+    modalSkills.innerHTML = skills.map(skill => `<span class="skill-tag">${skill}</span>`).join('');
+    
+    // Show modal
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+    if (modalContent) {
+        modalContent.style.opacity = '1';
+        modalContent.style.transform = 'scale(1)';
+    }
+    
+    // Animate modal content
+    gsap.from('.modal-content', {
+        opacity: 0,
+        scale: 0.8,
+        duration: 0.3,
+        ease: 'back.out(1.7)'
+    });
+    
+    gsap.from('.modal-photo', {
+        opacity: 0,
+        scale: 0.5,
+        duration: 0.5,
+        delay: 0.2,
+        ease: 'power2.out'
+    });
+    
+    gsap.from('.modal-info h3', {
+        opacity: 0,
+        y: 30,
+        duration: 0.5,
+        delay: 0.3,
+        ease: 'power2.out'
+    });
+    
+    gsap.from('.modal-info p', {
+        opacity: 0,
+        y: 20,
+        duration: 0.5,
+        delay: 0.4,
+        ease: 'power2.out'
+    });
+    
+    gsap.from('.modal-description', {
+        opacity: 0,
+        y: 20,
+        duration: 0.5,
+        delay: 0.5,
+        ease: 'power2.out'
+    });
+    
+    gsap.from('.skill-tag', {
+        opacity: 0,
+        scale: 0.8,
+        duration: 0.3,
+        delay: 0.6,
+        stagger: 0.1,
+        ease: 'power2.out'
+    });
+}
+
+function closeTeamModal() {
+    const modal = document.getElementById('teamModal');
+    if (!modal || modal.style.display === 'none') {
+        return;
+    }
+
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
+
+function openTeamMemberFromCard(memberCard) {
+    if (!memberCard) {
+        return;
+    }
+
+    const nameElement = memberCard.querySelector('h4');
+    const roleElement = memberCard.querySelector('p');
+    const photoElement = memberCard.querySelector('.member-photo');
+
+    const name = memberCard.dataset.name || (nameElement ? nameElement.textContent.trim() : 'Membru echipa');
+    const role = memberCard.dataset.role || (roleElement ? roleElement.textContent.trim() : 'Membru Delta Force Robotics');
+    const photo = memberCard.dataset.photo || (photoElement ? photoElement.getAttribute('src') : '');
+    const description = memberCard.dataset.description || `${name} contribuie activ in echipa Delta Force Robotics pe rolul de ${role}.`;
+    const skills = (memberCard.dataset.skills || 'Teamwork,Innovation,Dedication,Growth')
+        .split(',')
+        .map(skill => skill.trim())
+        .filter(Boolean);
+
+    openTeamModal(name, role, photo, description, skills);
+}
+
+document.querySelectorAll('[data-close-modal]').forEach(closeTrigger => {
+    closeTrigger.addEventListener('click', (event) => {
+        event.stopPropagation();
+        closeTeamModal();
+    });
+});
+
+// Close modal on ESC key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        closeTeamModal();
+    }
 });
 
 console.log('🚀 Delta Force Robotics Website Loaded Successfully!');

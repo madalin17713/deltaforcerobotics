@@ -1,6 +1,37 @@
 // FIRST ROBOTICS COMPETITION PAGE SCRIPT
 
 // Initialize 3D background
+function initCustomCursor() {
+    if (document.querySelector('.cursor') || document.querySelector('.cursor-follower')) {
+        return;
+    }
+
+    const cursor = document.createElement('div');
+    cursor.className = 'cursor';
+    document.body.appendChild(cursor);
+
+    const cursorFollower = document.createElement('div');
+    cursorFollower.className = 'cursor-follower';
+    document.body.appendChild(cursorFollower);
+
+    const updateCursorPosition = (e) => {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+
+        setTimeout(() => {
+            cursorFollower.style.left = e.clientX - 10 + 'px';
+            cursorFollower.style.top = e.clientY - 10 + 'px';
+        }, 50);
+    };
+
+    document.addEventListener('mousemove', updateCursorPosition);
+
+    if (window.innerWidth < 768) {
+        cursor.style.display = 'none';
+        cursorFollower.style.display = 'none';
+    }
+}
+
 function init3DBackground() {
     let scene, camera, renderer, particles;
 
@@ -67,6 +98,12 @@ function init3DBackground() {
 
 // Page specific animations
 document.addEventListener('DOMContentLoaded', () => {
+    if (window.gsap && window.ScrollTrigger) {
+        gsap.registerPlugin(ScrollTrigger);
+    }
+
+    initCustomCursor();
+
     // Initialize 3D background
     init3DBackground();
     

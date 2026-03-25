@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FIRST Robotics Competition - Delta Force Robotics</title>
-    <link rel="stylesheet" href="css/first-robotics-competition.css">
-    <link rel="stylesheet" href="fonts/orbitron-rajdhani.css">
-    <script src="libs/three.min.js"></script>
-    <script src="libs/gsap.min.js"></script>
-    <script src="libs/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/first-robotics-competition.css">
+    <link rel="stylesheet" href="../assets/fonts/orbitron-rajdhani.css">
+    <script src="../assets/libs/three.min.js" defer></script>
+    <script src="../assets/libs/gsap.min.js" defer></script>
+    <script src="../assets/libs/ScrollTrigger.min.js" defer></script>
+    <script src="../assets/js/first-robotics-competition.js" defer></script>
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <img src="logo.png" alt="Delta Force Robotics" class="logo-img">
-                <span class="logo-text">DELTA FORCE</span>
+                <img src="../assets/images/logo.png" alt="Delta Force Robotics" class="logo-img">
+                <span class="logo-text">DELTA FORCE ROBOTICS</span>
             </div>
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">ACASĂ</a></li>
-                <li><a href="index.html#about" class="nav-link">DESPRE</a></li>
+                <li><a href="index.html#about" class="nav-link">DESPRE NOI</a></li>
                 <li><a href="index.html#projects" class="nav-link">PROIECTE</a></li>
                 <li><a href="index.html#team" class="nav-link">ECHIPĂ</a></li>
                 <li><a href="index.html#contact" class="nav-link">CONTACT</a></li>
@@ -173,7 +174,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="logo.png" alt="Delta Force Robotics" class="footer-logo-img">
+                    <img src="../assets/images/logo.png" alt="Delta Force Robotics" class="footer-logo-img">
                     <span class="logo-text">DELTA FORCE ROBOTICS</span>
                 </div>
                 <div class="footer-social">
@@ -184,45 +185,10 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Delta Force Robotics. All rights reserved.</p>
+                <p>&copy; 2024 Delta Force Robotics. Toate drepturile rezervate.</p>
             </div>
         </div>
     </footer>
 
-    <script src="js/first-robotics-competition.js"></script>
-    <script>
-        // Initialize 3D background for project page
-        init3DBackground();
-        
-        // Project page specific animations
-        gsap.from('.project-number-large', {
-            scale: 0,
-            opacity: 0,
-            duration: 1,
-            ease: 'back.out(1.7)'
-        });
-        
-        gsap.from('.project-hero-content h1', {
-            y: 50,
-            opacity: 0,
-            duration: 1,
-            delay: 0.3
-        });
-        
-        gsap.from('.project-subtitle', {
-            y: 30,
-            opacity: 0,
-            duration: 1,
-            delay: 0.5
-        });
-        
-        gsap.from('.project-hero-stats .stat', {
-            scale: 0,
-            opacity: 0,
-            duration: 0.8,
-            stagger: 0.1,
-            delay: 0.7
-        });
-    </script>
 </body>
 </html>
