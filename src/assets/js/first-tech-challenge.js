@@ -26,6 +26,37 @@ function throttle(func, limit) {
     }
 }
 
+function initCustomCursor() {
+    if (document.querySelector('.cursor') || document.querySelector('.cursor-follower')) {
+        return;
+    }
+
+    const cursor = document.createElement('div');
+    cursor.className = 'cursor';
+    document.body.appendChild(cursor);
+
+    const cursorFollower = document.createElement('div');
+    cursorFollower.className = 'cursor-follower';
+    document.body.appendChild(cursorFollower);
+
+    const updateCursorPosition = throttle((e) => {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+
+        setTimeout(() => {
+            cursorFollower.style.left = e.clientX - 10 + 'px';
+            cursorFollower.style.top = e.clientY - 10 + 'px';
+        }, 50);
+    }, 16);
+
+    document.addEventListener('mousemove', updateCursorPosition);
+
+    if (window.innerWidth < 768) {
+        cursor.style.display = 'none';
+        cursorFollower.style.display = 'none';
+    }
+}
+
 // Optimize Three.js performance
 function optimizeThreeJS() {
     const particleCount = window.innerWidth < 768 ? 1000 : 3000; // Reduced for better performance
@@ -117,6 +148,12 @@ function init3DBackground() {
 
 // Page specific animations - Optimized
 document.addEventListener('DOMContentLoaded', () => {
+    if (window.gsap && window.ScrollTrigger) {
+        gsap.registerPlugin(ScrollTrigger);
+    }
+
+    initCustomCursor();
+
     // Initialize 3D background
     init3DBackground();
     
@@ -196,6 +233,38 @@ document.addEventListener('DOMContentLoaded', () => {
             duration: 0.6, // Reduced from 0.8
             delay: index * 0.05, // Reduced delay
             ease: 'back.out(1.7)'
+        });
+    });
+
+    gsap.utils.toArray('.season-card').forEach((card, index) => {
+        gsap.from(card, {
+            scrollTrigger: {
+                trigger: card,
+                start: 'top 85%',
+                end: 'bottom 20%',
+                toggleActions: 'play none none reverse'
+            },
+            y: 60,
+            opacity: 0,
+            duration: 0.7,
+            delay: index * 0.08,
+            ease: 'power3.out'
+        });
+    });
+
+    gsap.utils.toArray('.season-media-item').forEach((item, index) => {
+        gsap.from(item, {
+            scrollTrigger: {
+                trigger: item,
+                start: 'top 90%',
+                end: 'bottom 20%',
+                toggleActions: 'play none none reverse'
+            },
+            y: 35,
+            opacity: 0,
+            duration: 0.55,
+            delay: index * 0.04,
+            ease: 'power2.out'
         });
     });
 });

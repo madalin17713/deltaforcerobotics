@@ -12,31 +12,32 @@
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="Delta Force Robotics - Arad">
     <meta property="og:description" content="Echipa de robotică din Arad specializată în competiții FIRST">
-    <meta property="og:image" content="logo.png">
+    <meta property="og:image" content="../assets/images/logo.png">
     <meta property="og:type" content="website">
     <meta name="theme-color" content="#ff6b35">
     
     <!-- PWA Manifest -->
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="../manifest.json">
     
     <!-- Preload Critical Resources -->
-    <link rel="preload" href="../src/assets/css/main.css" as="style">
-    <link rel="preload" href="../src/assets/fonts/orbitron-rajdhani.css" as="style">
-    <link rel="preload" href="../src/assets/images/logo.png" as="image">
+    <link rel="preload" href="../assets/css/main.css" as="style">
+    <link rel="preload" href="../assets/fonts/orbitron-rajdhani.css" as="style">
+    <link rel="preload" href="../assets/images/logo.png" as="image">
     
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="../src/assets/css/main.css">
-    <link rel="stylesheet" href="../src/assets/fonts/orbitron-rajdhani.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/fonts/orbitron-rajdhani.css">
     
     <!-- Scripts with defer for non-blocking -->
-    <script src="../src/assets/libs/three.min.js" defer></script>
-    <script src="../src/assets/js/main.js"></script>
-    <script src="../src/assets/libs/ScrollTrigger.min.js" defer></script>
+    <script src="../assets/libs/three.min.js" defer></script>
+    <script src="../assets/libs/gsap.min.js" defer></script>
+    <script src="../assets/libs/ScrollTrigger.min.js" defer></script>
+    <script src="../assets/js/main.js" defer></script>
 </head>
 <body>
     <div id="loader" class="loader">
         <div class="loader-content">
-            <img src="../src/assets/images/logo.png" alt="Delta Force Robotics" class="logo-img">
+            <img src="../assets/images/logo.png" alt="Delta Force Robotics" class="logo-img">
             <div class="loader-text">DELTA FORCE ROBOTICS</div>
             <div class="loader-progress">
                 <div class="progress-bar"></div>
@@ -47,7 +48,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <img src="../src/assets/images/logo.png" alt="Delta Force Robotics" class="logo-img">
+                <img src="../assets/images/logo.png" alt="Delta Force Robotics" class="logo-img">
                 <span class="logo-text">DELTA FORCE ROBOTICS</span>
             </div>
             <ul class="nav-menu">
@@ -70,20 +71,17 @@
         <div id="canvas-container"></div>
         <div class="hero-content">
             <div class="hero-title">
-                <h1 class="glitch" data-text="DELTA FORCE">DELTA FORCE ROBOTICS</h1>
+                <h1 class="glitch" data-text="DELTA FORCE">DELTA FORCE</h1>
                 <h2>ROBOTICS</h2>
             </div>
             <div class="hero-subtitle">
-                <p>Echipa de robotică din Arad</p>
+                <p>FTC & FRC</p>
                 <div class="typing-text">
                     <span class="typed-text"></span>
                     <span class="cursor">&|</span>
                 </div>
             </div>
-            <div class="hero-cta">
-                <button class="cta-primary">DESCOPERĂ MAI MULT</button>
-                <button class="cta-secondary">PROIECTE NOASTRE</button>
-            </div>
+            
         </div>
         <div class="scroll-indicator">
             <div class="scroll-arrow"></div>
@@ -102,35 +100,37 @@
             </div>
             <div class="about-grid">
                 <div class="about-text">
-                    <h3>Inovație și Tehnologie</h3>
-                    <p>Suntem o echipă de robotică din Arad, dedicată excelenței în competițiile de robotică și dezvoltării de soluții tehnologice inovatoare.</p>
+                    <h3>WE ARE BORN TO MOVE!</h3>
+                    <p>Noi suntem Delta Force, echipa de robotică a Liceului Național de Informatică Arad, fondată în 2018. Am început cu resurse limitate, dar prin perseverență, învățare continuă și colaborare, am crescut într-o echipă stabilă, cu un laborator dedicat și o comunitate care ne susține. Ne ghidăm după valorile Gracious Professionalism și Coopertition, iar modul nostru de lucru se bazează pe prototipare, testare și responsabilitate față de obiectivele echipei și față de comunitatea FIRST.</p>
                     <div class="about-highlights">
                         <div class="highlight-item">
                             <div class="highlight-icon">🚀</div>
                             <div class="highlight-text">
                                 <h4>Inovație Continuă</h4>
-                                <p>Dezvoltăm soluții tehnologice de ultimă generație</p>
+                                <p>Dezvoltăm tehnologii inovatoare și construim soluții inteligente, îmbinând pasiunea pentru robotică cu creativitatea și spiritul de echipă.</p>
                             </div>
                         </div>
                         <div class="highlight-item">
                             <div class="highlight-icon">🤖</div>
                             <div class="highlight-text">
-                                <h4>Expertiză Robotică</h4>
-                                <p>Echipă specializată în robotică și automatizare</p>
-                            </div>
-                        </div>
-                        <div class="highlight-item">
-                            <div class="highlight-icon">🏆</div>
-                            <div class="highlight-text">
-                                <h4>Excelență</h4>
-                                <p>Rezultate remarcabile în competiții naționale</p>
+                              <h4>Expertiză în Robotică</h4>
+<p>O echipă pasionată de robotică și tehnologie</p>
+</div>
+</div>
+<div class="highlight-item">
+    <div class="highlight-icon">🏆</div>
+    <div class="highlight-text">
+        <h4>Performanță</h4>
+        <p>Rezultate de top atât în competiții naționale cât și internaționale</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="about-visual">
-                    <div class="robot-3d-container">
-                        <div class="robot-model"></div>
+                    <div class="team-visual">
+                        <div class="team-image">
+                            <img src="../assets/images/poza echipa.webp" alt="Delta Force Robotics Team" class="team-photo">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -146,7 +146,7 @@
             <div class="projects-grid">
                 <div class="project-card" data-tilt onclick="window.location.href='first-tech-challenge.html'">
                     <div class="project-image">
-                        <div class="project-overlay"><img src="../src/assets/images/ftc_section_photo.jpg" alt="Delta Force Robotics"></div>
+                        <div class="project-overlay"><img src="../assets/images/ftc_section_photo.jpg" alt="Delta Force Robotics"></div>
                         <div class="project-number">01</div>
                     </div>
                     <div class="project-content">
@@ -161,7 +161,7 @@
                 </div>
                 <div class="project-card" data-tilt onclick="window.location.href='first-robotics-competition.html'">
                     <div class="project-image">
-                        <div class="project-overlay"><img src="../src/assets/images/frc_secton_photo.jpg" alt="Delta Force Robotics"></div>
+                        <div class="project-overlay"><img src="../assets/images/frc_secton_photo.jpg" alt="Delta Force Robotics"></div>
                         <div class="project-number">02</div>
                     </div>
                     <div class="project-content">
@@ -176,7 +176,7 @@
                 </div>
                 <div class="project-card" data-tilt onclick="window.location.href='first-global-challenge.html'">
                     <div class="project-image">
-                        <div class="project-overlay"><img src="../src/assets/images/fgc_section_photo.png" alt="Delta Force Robotics"></div>
+                        <div class="project-overlay"><img src="../assets/images/fgc_section_photo.png" alt="Delta Force Robotics"></div>
                         <div class="project-number">03</div>
                     </div>
                     <div class="project-content">
@@ -199,62 +199,615 @@
                 <h2 class="section-title">ECHIPA</h2>
                 <div class="title-underline"></div>
             </div>
-            <div class="team-grid">
-                <div class="team-member">
-                    <div class="member-avatar">
-                        <div class="avatar-glow"></div>
-                        <div class="avatar-img"></div>
+            
+            <!-- MEMBRII -->
+            <div class="team-section">
+                <h3 class="team-subtitle">MENTORI PRINCIPALI</h3>
+                <div class="team-grid mentors-grid">
+                    <div
+                        class="team-member" onclick="openTeamMemberFromCard(this)"
+                        data-team-member="corina"
+                        data-name="Corina"
+                        data-role="Mentor Principal"
+                        data-photo="../assets/images/hean_mentor_photo.png"
+                        data-description="Bună ziua! Numele meu este Corina și sunt mentorul principal al echipei
+Delta Force. Am înființat echipa acum 8 ani la Liceul Național de
+Informatică din Arad. În cadrul echipei, mă ocup de organizare și
+strategie,încerc să sprijin fiecare membru, fie că este vorba de obiective
+tehnice sau de dezvoltarea personală. Cel mai important rol al meu este
+să îmbin diviziile să comunice între ele și să mă asigur că lucră împreună,
+într-o atmosferă plăcută și armonioasă. Prin mentoratul meu, vreau să
+creez un loc unde să învățăm repede unii de la alții. Vreau o combinație
+între disciplină și idei noi, astfel încât, din simpli pasionați de robotică, să
+devenim profesioniștii de mâine.">
+                        <div class="member-avatar">
+                            <div class="avatar-glow"></div>
+                            <div class="avatar-img">
+                                <img src="../assets/images/hean_mentor_photo.png" alt="Mentor" class="member-photo">
+                            </div>
+                        </div>
+                        <h4>Corina</h4>
+                        <p>Mentor Principal</p>
                     </div>
-                    <h4>Captain</h4>
-                    <p>Team Lead & Software Architect</p>
-                    <div class="member-social">
-                        <span class="social-icon">📧</span>
-                        <span class="social-icon">💼</span>
-                        <span class="social-icon">🔗</span>
+                    <div class="team-member" onclick="openTeamMemberFromCard(this)"
+                        data-name="Mentor Manufacturare"
+                        data-role="Departament Hardware"
+                        data-photo="../assets/images/head_mentor_2.png"
+                        data-description="Salut! Numele meu este Florin și sunt mentorul departamentului de
+Fabricație. Activitatea mea principală este să îi ajut pe elevi să învețe cum se
+fac piesele robotului. Astfel, trecem de la o schiță la un robot real, gata de
+pus pe robot. Nu mă limitez doar la a le arăta cum se face, ci îi învăț să
+gândească bine înainte. Trebuie să verifice dacă materialul rezistă și cum să
+obțină piese de mare precizie. Vreau ca fiecare membru să învețe cum se
+lucrează corect . Îi fac să fie atenți la fiecare detaliu tehnic. Atunci când ești
+sub presiune la concurs, calitatea pieselor face diferența între un robot care
+funcționează perfect și unul care cedează.
+">
+                        <div class="member-avatar">
+                            <div class="avatar-glow"></div>
+                            <div class="avatar-img">
+                                <img src="../assets/images/head_mentor_2.png" alt="Mentor" class="member-photo">
+                            </div>
+                        </div>
+                        <h4>Florin</h4>
+                        <p>Mentor Manufacturare</p>
+                    </div>
+                    <div class="team-member" onclick="openTeamMemberFromCard(this)"
+                        data-name="Mentor Mecanic"
+                        data-role="Departament Hardware"
+                        data-photo="../assets/images/Head_mentor_3.png"
+                        data-description="Bună! Numele meu este Octavian și sunt mentorul departamentului de
+Proiectare 3D. Rolul meu nu este doar simpla vizualizare digitală,eu îi învăț
+pe membri să transforme o idee simplă într-un prototip virtual serios, pe
+care să-l testăm prin simulări înainte de a-l construi. Mă ocup de verificarea
+soluțiilor tehnice pentru a evita surprizele când ajung la producție. De
+asemenea, îi ajut pe membrii echipei să identifice din timp greșelile de
+design, să reducă greutatea robotului și să facă fiecare piesă cât mai
+eficientă. Sunt foarte atent la precizie, pentru că vreau să mă asigur că
+fiecare milimetru proiectat digital ajută robotul să funcționeze perfect pe
+teren.
+">
+                        <div class="member-avatar">
+                            <div class="avatar-glow"></div>
+                            <div class="avatar-img">
+                                <img src="../assets/images/Head_mentor_3.png" alt="Mentor" class="member-photo">
+                            </div>
+                        </div>
+                        <h4>Octavian</h4>
+                        <p>Mentor Proiectare 3D</p>
                     </div>
                 </div>
-                <div class="team-member">
-                    <div class="member-avatar">
-                        <div class="avatar-glow"></div>
-                        <div class="avatar-img"></div>
+            </div>
+            
+            <!-- MENTORI ALUMNI -->
+            <div class="team-section">
+                <h3 class="team-subtitle">MENTORI ALUMNI</h3>
+                <div class="team-grid secondary-mentors-grid">
+                    <div class="team-member" onclick="openTeamMemberFromCard(this)"
+                        data-name="Mentor Asamblare"
+                        data-role="Departament Hardware"
+                        data-photo="../assets/images/assembly_mentor_photo.png"
+                        data-description="Salutări tuturor! Mă numesc Robert și sunt mentorul departamentului de
+asamblare. La un robot de competiție atât de complex, este foarte important
+ca totul să fie bine strâns și rezistent. Mă asigur că asamblarea se face cu
+mare precizie și atenție la fiecare detaliu. Rolul meu în echipă este să-i învăț
+pe membri nu doar cum să monteze piesele mecanice și electronice, ci și să
+înțeleagă cum funcționează componentele împreună și cum se împart forțele
+pe robot. Cred că, dacă nu asamblăm totul perfect, nu putem avea
+performanță. Din experiența mea de până acum, sunt convins că, dacă lucrăm
+cu atenție, robotul nostru va rezista fără probleme la cele mai dificile teste din
+timpul competițiilor.
+">
+                        <div class="member-avatar">
+                            <div class="avatar-glow"></div>
+                            <div class="avatar-img">
+                                <img src="../assets/images/assembly_mentor_photo.png" alt="Mentor" class="member-photo">
+                            </div>
+                        </div>
+                        <h4>Robert</h4>
+                        <p>Departament Hardware</p>
                     </div>
-                    <h4>Hardware Engineer</h4>
-                    <p>Robotics & Electronics Specialist</p>
-                    <div class="member-social">
-                        <span class="social-icon">📧</span>
-                        <span class="social-icon">💼</span>
-                        <span class="social-icon">🔗</span>
+                    <div class="team-member" onclick="openTeamMemberFromCard(this)"
+                        data-name="Mentor Strategy"
+                        data-role="Departament Strategy"
+                        data-photo="../assets/images/briana.png"
+                        data-description="Mă bucur să vă cunosc! Numele meu este Briana și sunt mentorul
+departamentului de Design Grafic. Eu cred că felul în care ne prezentăm
+este foarte important, așadar muncesc alături de membrii echipei pentru
+a realiza materiale grafice dreptul profesioniste. Nu mă ocup doar de
+design-ul robotului, ci îi învăț pe ceilalți cum să conceapă o strategie de
+branding și cum să transmită pasiunea și seriozitatea noastră prin toate
+creațiile să atingem performanța.De la realizarea logo-urilor și până la
+prezentări complexe, eu mă ocup să asigur o armonie vizuală și o coeziune
+a echipei noastre, pentru ca aceasta să fie vizibilă în fața juriului și a
+tuturor celor care ne urmăresc.
+">
+                        <div class="member-avatar">
+                            <div class="avatar-glow"></div>
+                            <div class="avatar-img">
+                                <img src="../assets/images/briana.png" alt="Mentor" class="member-photo">
+                            </div>
+                        </div>
+                        <h4>Briana</h4>
+                        <p>Departament Design Grafic</p>
+                    </div>
+                    <div class="team-member" onclick="openTeamMemberFromCard(this)"
+                        data-name="Mentor Business"
+                        data-role="Departament Business"
+                        data-photo="../assets/images/ruxandra.png"
+                        data-description="Salut! Numele meu este Ruxandra și sunt mentorul departamentului de
+Social Media. Pentru că totul se petrece online acum, eu îi ajut pe
+membrii echipei să documenteze tot ce lucrăm, pentru a arăta lumii
+întregului procesul din spatele robotului. Îi învăț pe ceilalți cum să facă
+postări pentru a atrage publicul,să gestioneze comunitatea noastră și
+cum să ne construim o prezență pe internet care să reflecte cât de buni
+suntem la Delta Force. Mă asigur că tot ce postăm este creativ și ajunge
+la cine trebuie, ca să facem echipa cunoscută peste tot, atât în țară, cât
+și în afară.">
+                        <div class="member-avatar">
+                            <div class="avatar-glow"></div>
+                            <div class="avatar-img">
+                                <img src="../assets/images/ruxandra.png" alt="Mentor" class="member-photo">
+                            </div>
+                        </div>
+                        <h4>Ruxandra</h4>
+                        <p>Departament Social Media</p>
                     </div>
                 </div>
-                <div class="team-member">
-                    <div class="member-avatar">
-                        <div class="avatar-glow"></div>
-                        <div class="avatar-img"></div>
-                    </div>
-                    <h4>AI Developer</h4>
-                    <p>Machine Learning & Computer Vision</p>
-                    <div class="member-social">
-                        <span class="social-icon">📧</span>
-                        <span class="social-icon">💼</span>
-                        <span class="social-icon">🔗</span>
+            </div>
+            
+            <!-- LIDER -->
+            <div class="team-section">
+                <h3 class="team-subtitle">LIDER</h3>
+                <div class="leader-centered-container">
+                    <div class="team-grid leaders-grid">
+                        <div class="team-member" onclick="openTeamMemberFromCard(this)"
+                            data-name="Team Captain"
+                            data-role="Team Lead & Coordination"
+                            data-photo="../assets/images/misu.png"
+                            data-description="Bună! Mă numesc Mihai și sunt de 5 ani în
+această echipă în postura de căpitan. Rolul meu
+este să mă asigur că toată lumea știe ce are de
+făcut și că ideile membrilor se transformă exact
+în robotul pe care îl construim în atelier. Mă
+ocup să țin legătura între divizii, verific progresul
+și mă asigur că avem resursele necesare la
+momentul potrivit. Am învățat în tot acest timp
+cum să păstrez calmul în momentele tensionate
+de la competiții, să transform problemele în
+soluții și să fac echipa să lucreze ca o echipă
+unită, pregătită să dea tot ce e mai bun pe
+teren.">
+                            <div class="member-avatar">
+                                <div class="avatar-glow"></div>
+                                <div class="avatar-img">
+                                    <img src="../assets/images/misu.png" alt="Leader" class="member-photo">
+                                </div>
+                            </div>
+                            <h4>Mihai</h4>
+                            <p>Team Lead & Coordination</p>
+                        </div>
                     </div>
                 </div>
-                <div class="team-member">
-                    <div class="member-avatar">
-                        <div class="avatar-glow"></div>
-                        <div class="avatar-img"></div>
+            </div>
+            
+            <!-- MEMBRII -->
+            <div class="team-section">
+                <h3 class="team-subtitle">MEMBRII</h3>
+                <div class="team-grid members-grid">
+                    <div class="team-member" onclick="openTeamMemberFromCard(this)"
+                        data-name="Departament Hardware"
+                        data-role="Electricity & Manufacturing"
+                        data-photo="../assets/images/eu1.png"
+                        data-description="Bună! Numele meu este Mădălin și fac parte din această echipă de 2
+ani. Eu mă ocup de gestionarea procesului de fabricare a
+componentelor personalizate și sistemului electrc al robotului.Acest lucru înseamnă că eu transform
+proiectele noastre digitale în piese reale, cu o precizie foarte mare.
+Aleg materialele potrivite și setez parametrii de tăiere în așa fel încât
+să obțin piese care să reziste la solicitări mecanice foarte mari. Sunt
+atent la calitatea pieselor prelucrate și la respectarea specificațiilor
+de proiectare, ceea ce contribuie la robotul nostru. Prin munca mea,
+eu garantez că fiecare piesă fabricată de noi este de cea mai bună
+calitate, oferind echipei noastre siguranța unui echipament puternic,
+durabil și pregătit să funcționeze bine în orice condiții.">
+                        <div class="member-avatar">
+                            <div class="avatar-glow"></div>
+                            <div class="avatar-img">
+                                <img src="../assets/images/eu2.jpeg" alt="Member" class="member-photo">
+                            </div>
+                        </div>
+                        <h4>Mădălin</h4>
+                        <p>Departament Hardware</p>
                     </div>
-                    <h4>Mechanical Designer</h4>
-                    <p>CAD & 3D Modeling Expert</p>
-                    <div class="member-social">
-                        <span class="social-icon">📧</span>
-                        <span class="social-icon">💼</span>
-                        <span class="social-icon">🔗</span>
+                    <div class="team-member" onclick="openTeamMemberFromCard(this)"
+                        data-name="Departament Hardware"
+                        data-role="Asamblare"
+                        data-photo="../assets/images/andrei2.png"
+                        data-description="Salut! Numele meu este Andrei și fac parte din
+echipă de 2 ani. Mă
+ocup de coordonarea asamblării robotului și mă
+asigur că toate componentele mecanice și
+electronice sunt integrate corect. Planific atent
+fiecare etapă, verific piesele și mecanismele și
+colaborez cu cei care le proiectează și le fabrică
+pentru ca robotul final să funcționeze exact cum
+a fost gândit. În acest fel, transformăm piese
+separate într-un robot stabil, eficient și pregătit
+pentru cerințele competiției, unde atenția la
+detalii face diferența.">
+                        <div class="member-avatar">
+                            <div class="avatar-glow"></div>
+                            <div class="avatar-img">
+                                <img src="../assets/images/andrei.png" alt="Member" class="member-photo">
+                            </div>
+                        </div>
+                        <h4>Andrei</h4>
+                        <p>Departament Hardware</p>
+                    </div>
+                    <div class="team-member" onclick="openTeamMemberFromCard(this)"
+                        data-name="Departament Hardware"
+                        data-role="Asamblare"
+                        data-photo="../assets/images/ianis2.png"
+                        data-description="Salutare! Mă numesc Ianis și fac parte din aceassta echipa de 1 an.
+Lucrez la integrarea părților robotului, asigurând că toate
+componentele mecanice și electronice funcționează corect
+împreună.În acest proces, vreau să mă asigur că întregul sistem
+funcționează bine, analizând fiecare parte și modul în care aceasta
+contribuie la performanța robotului.Verific foarte atent toate soluțiile
+tehnice pentru a mă asigura că sunt corect implementate și că nu
+există probleme de compatibilitate. Astfel, contribui la crearea unui
+sistem stabil și coordonat, care să poată funcționa bine chiar și în
+condiții dificile.">
+                        <div class="member-avatar">
+                            <div class="avatar-glow"></div>
+                            <div class="avatar-img">
+                                <img src="../assets/images/ianis1.png" alt="Member" class="member-photo">
+                            </div>
+                        </div>
+                        <h4>Ianis</h4>
+                        <p>Departament Hardware</p>
+                    </div>
+                    <div class="team-member" onclick="openTeamMemberFromCard(this)"
+                        data-name="Departament Hardware"
+                        data-role="Proiectare"
+                        data-photo="../assets/images/luca1.png"
+                        data-description="Bun găsit tuturor! Mă numesc Luca și acesta este al doilea meu an în
+echipa Delta Force. În echipă mă ocup de realizarea modelelor CAD
+pentru componentele robotului. Mai exact, transform ideile noastre în
+modele digitale clare și precise, care ne ajută să vedem cum va arăta și
+cum va funcționa fiecare piesă înainte să fie construită.
+Rolul meu cere atenție la detalii și înțelegerea modului în care toate
+componentele se potrivesc între ele, astfel încât robotul să fie bine
+proiectat și să funcționeze corect. În plus, realizez documentația tehnică
+și fișierele digitale necesare pentru fabricație, ceea ce ajută colaborarea
+dintre partea de design și cea de producție">
+                       
+                        <div class="member-avatar">
+                            <div class="avatar-glow"></div>
+                            <div class="avatar-img">
+                                <img src="../assets/images/luca2.png" alt="Member" class="member-photo">
+                            </div>
+                        </div>
+                        <h4>Luca</h4>
+                        <p>Departament Hardware</p>
+                    </div>
+                    <div class="team-member" onclick="openTeamMemberFromCard(this)"
+                        data-name="Departamment Hardware"
+                        data-role="Electrică"
+                        data-photo="../assets/images/goblin2.png"
+                        data-description="Salutare! Numele meu este Vlad și am 1 an de experiență în această
+echipă. Mă ocup cu coordonarea arhitecturii electronice a robotului
+nostru. Sunt responsabil pentru gestionarea sistemelor de
+alimentare, managementul cablajului și integrarea senzorilor esențiali
+pentru teleoperare și autonomie. Rolul meu este să asigur o
+distribuție sigură și eficientă a energiei către toate componentele.
+Implementăm soluții pentru a preveni interferențele sau defecțiunile
+electrice. Organizez fiecare circuit într-un mod metodic și modular,
+punând accent pe siguranța electrică și pe rapiditatea intervențiilor la
+cabluri. Prin munca mea, transform un ansamblu de fire într-un punct
+forte al robotului. Așa, robotul răspunde repede la comenzi și
+funcționează bine împreună cu celelalte componente.
+">
+
+                
+                        <div class="member-avatar">
+                            <div class="avatar-glow"></div>
+                            <div class="avatar-img">
+                                <img src="../assets/images/goblin1.png" alt="Member" class="member-photo">
+                            </div>
+                        </div>
+                        <h4>Vlad</h4>
+                        <p>Departament Hardware</p>
+                    </div>
+                    <div class="team-member" onclick="openTeamMemberFromCard(this)"
+                        data-name="Departament Hardware"
+                        data-role="Scouting"
+                        data-photo="../assets/images/denis2.png"
+                        data-description="Bună tuturor! Mă numesc Denis și fac parte din această echipă de 1
+an. Mă ocup cu planificarea strategică și cu procesul de scouting.
+Colecționez date esențiale despre performanțele tuturor echipelor
+din competiție. Activitatea mea include observarea atentă, colectarea
+și interpretarea statisticilor în timp real. Scopul meu este să identific
+punctele forte și slăbiciunile posibile ale partenerilor de alianță sau
+ale adversarilor. Informațiile strategice pe care le ofer echipei și
+căpitanului ajută la formularea tacticilor de joc. Mă asigur că driverii
+abordează fiecare meci cu o strategie bine fundamentată, adaptată la
+adversar.">
+                        <div class="member-avatar">
+                            <div class="avatar-glow"></div>
+                            <div class="avatar-img">
+                                <img src="../assets/images/denis1.png" alt="Member" class="member-photo">
+                            </div>
+                        </div>
+                        <h4>Denis</h4>
+                        <p>Departament Hardware</p>
+                    </div>
+                    <div class="team-member" onclick="openTeamMemberFromCard(this)"
+                        data-name="Departament Hardware"
+                        data-role="Proiectare"
+                        data-photo="../assets/images/alexia2.png"
+                        data-description="Salut! Numele meu este Alexia și m-am alăturat echipei anul acesta.
+Mă ocup de proiectarea și realizarea componentelor prin fabricație
+aditivă, oferind echipei soluții rapide și inovatoare pentru piesele cu
+geometrii complexe. Activitatea mea presupune optimizarea
+constantă a setărilor de imprimare 3D și alegerea materialelor
+plastice de înaltă rezistență, astfel încât să obținem piese care
+combină greutatea redusă cu o durabilitate structurală optimă. Sunt
+responsabil pentru prototiparea rapidă a subansamblurilor, facilitând
+testarea imediată a ideilor noi și permițând echipei să evolueze
+constant prin iterații succesive. Prin munca mea la imprimanta 3D,
+reduc timpul dintre idee și testare, aducând mai multă flexibilitate și
+inovație în dezvoltarea robotului nostru.
+">
+                    
+                        <div class="member-avatar">
+                            <div class="avatar-glow"></div>
+                            <div class="avatar-img">
+                                <img src="../assets/images/alexia1.png" alt="Member" class="member-photo">
+                            </div>
+                        </div>
+                        <h4>Alexia</h4>
+                        <p>Departament Hardware</p>
+                    </div>
+                    <div class="team-member" onclick="openTeamMemberFromCard(this)"
+                        data-name="Marketing "
+                        data-role="Marketing & Outreach"
+                        data-photo="../assets/images/victor2.png"
+                        data-description="Salut! Numele meu este Victor și acesta este primul meu an în
+echipă. Lucrez la îmbunătățirea părților mobile ale robotului, ca să
+se miște mai repede și mai bine. Când proiectez și testez,
+urmăresc cum funcționează brațele și sistemele de colectare și fac
+ajustări pentru ca mișcările să fie stabile și controlate. Scopul meu
+este să găsesc un echilibru între rezistență și precizie, astfel încât
+robotul să funcționeze corect și fără probleme în timpul
+competiției.
+">
+                        <div class="member-avatar">
+                            <div class="avatar-glow"></div>
+                            <div class="avatar-img">
+                                <img src="../assets/images/victor1.png" alt="Member" class="member-photo">
+                            </div>
+                        </div>
+                        <h4>Victor</h4>
+                        <p>Departament Hardware</p>
+                    </div>
+                    <div class="team-member" onclick="openTeamMemberFromCard(this)"
+                        data-name="Scout Lead"
+                        data-role="Scouting & Analysis"
+                        data-photo="../assets/images/members/member7.jpg"
+                        data-description="Scout Lead-ul organizează colectarea și interpretarea datelor din competiții, oferind echipei informații utile pentru strategii mai bune.">
+                        <div class="member-avatar">
+                            <div class="avatar-glow"></div>
+                            <div class="avatar-img">
+                                <img src="../assets/images/members/member7.jpg" alt="Member" class="member-photo">
+                            </div>
+                        </div>
+                        <h4>Scout Lead</h4>
+                        <p>Scouting & Analysis</p>
+                    </div>
+                    <div class="team-member" onclick="openTeamMemberFromCard(this)"
+                        data-name="Driver"
+                        data-role="Robot Driver"
+                        data-photo="../assets/images/members/member8.jpg"
+                        data-description="Driver-ul controlează robotul în timpul meciurilor și are un rol esențial în aplicarea strategiei sub presiunea competiției.">
+                        <div class="member-avatar">
+                            <div class="avatar-glow"></div>
+                            <div class="avatar-img">
+                                <img src="../assets/images/members/member8.jpg" alt="Member" class="member-photo">
+                            </div>
+                        </div>
+                        <h4>Driver</h4>
+                        <p>Robot Driver</p>
+                    </div>
+                    <div class="team-member" onclick="openTeamMemberFromCard(this)"
+                        data-name="Human Player"
+                        data-role="Game Strategy"
+                        data-photo="../assets/images/members/member9.jpg"
+                        data-description="Human Player-ul sprijină desfășurarea meciului din zona de joc și colaborează strâns cu driverii pentru execuția corectă a strategiei.">
+                        <div class="member-avatar">
+                            <div class="avatar-glow"></div>
+                            <div class="avatar-img">
+                                <img src="../assets/images/members/member9.jpg" alt="Member" class="member-photo">
+                            </div>
+                        </div>
+                        <h4>Human Player</h4>
+                        <p>Game Strategy</p>
+                    </div>
+                    <div class="team-member" onclick="openTeamMemberFromCard(this)"
+                        data-name="Pit Crew"
+                        data-role="Maintenance & Repairs"
+                        data-photo="../assets/images/members/member10.jpg"
+                        data-description="Pit Crew-ul intervine rapid pentru întreținerea și repararea robotului, asigurând că acesta rămâne pregătit pentru fiecare rundă.">
+                        <div class="member-avatar">
+                            <div class="avatar-glow"></div>
+                            <div class="avatar-img">
+                                <img src="../assets/images/members/member10.jpg" alt="Member" class="member-photo">
+                            </div>
+                        </div>
+                        <h4>Pit Crew</h4>
+                        <p>Maintenance & Repairs</p>
+                    </div>
+                    <div class="team-member" onclick="openTeamMemberFromCard(this)"
+                        data-name="Programmer"
+                        data-role="Software & Algorithms"
+                        data-photo="../assets/images/members/member11.jpg"
+                        data-description="Programmer-ul dezvoltă algoritmi și funcționalități pentru robot, contribuind la control precis, autonomie și îmbunătățirea performanței.">
+                        <div class="member-avatar">
+                            <div class="avatar-glow"></div>
+                            <div class="avatar-img">
+                                <img src="../assets/images/members/member11.jpg" alt="Member" class="member-photo">
+                            </div>
+                        </div>
+                        <h4>Programmer</h4>
+                        <p>Software & Algorithms</p>
+                    </div>
+                    <div class="team-member" onclick="openTeamMemberFromCard(this)"
+                        data-name="Mechanical Builder"
+                        data-role="Construction & Assembly"
+                        data-photo="../assets/images/members/member12.jpg"
+                        data-description="Mechanical Builder-ul participă la realizarea structurii robotului, montajul componentelor și perfecționarea sistemelor mecanice.">
+                        <div class="member-avatar">
+                            <div class="avatar-glow"></div>
+                            <div class="avatar-img">
+                                <img src="../assets/images/members/member12.jpg" alt="Member" class="member-photo">
+                            </div>
+                        </div>
+                        <h4>Mechanical Builder</h4>
+                        <p>Construction & Assembly</p>
+                    </div>
+                    <div class="team-member" onclick="openTeamMemberFromCard(this)"
+                        data-name="Safety Officer"
+                        data-role="Safety & Compliance"
+                        data-photo="../assets/images/members/member13.jpg"
+                        data-description="Safety Officer-ul promovează un mediu de lucru sigur și urmărește respectarea regulilor și procedurilor din laborator și competiții.">
+                        <div class="member-avatar">
+                            <div class="avatar-glow"></div>
+                            <div class="avatar-img">
+                                <img src="../assets/images/members/member13.jpg" alt="Member" class="member-photo">
+                            </div>
+                        </div>
+                        <h4>Safety Officer</h4>
+                        <p>Safety & Compliance</p>
+                    </div>
+                    <div class="team-member" onclick="openTeamMemberFromCard(this)"
+                        data-name="Photographer"
+                        data-role="Media & Documentation"
+                        data-photo="../assets/images/members/member14.jpg"
+                        data-description="Photographer-ul documentează activitatea echipei prin imagini și materiale vizuale care surprind progresul, energia și rezultatele proiectelor.">
+                        <div class="member-avatar">
+                            <div class="avatar-glow"></div>
+                            <div class="avatar-img">
+                                <img src="../assets/images/members/member14.jpg" alt="Member" class="member-photo">
+                            </div>
+                        </div>
+                        <h4>Photographer</h4>
+                        <p>Media & Documentation</p>
+                    </div>
+                    <div class="team-member" onclick="openTeamMemberFromCard(this)"
+                        data-name="Business Analyst"
+                        data-role="Business Planning"
+                        data-photo="../assets/images/members/member15.jpg"
+                        data-description="Business Analyst-ul contribuie la planificarea resurselor, pregătirea prezentărilor și construirea relațiilor care susțin dezvoltarea echipei.">
+                        <div class="member-avatar">
+                            <div class="avatar-glow"></div>
+                            <div class="avatar-img">
+                                <img src="../assets/images/members/member15.jpg" alt="Member" class="member-photo">
+                            </div>
+                        </div>
+                        <h4>Business Analyst</h4>
+                        <p>Business Planning</p>
+                    </div>
+                    <div class="team-member" onclick="openTeamMemberFromCard(this)"
+                        data-name="Web Developer"
+                        data-role="Website & Digital"
+                        data-photo="../assets/images/members/member16.jpg"
+                        data-description="Web Developer-ul dezvoltă și îmbunătățește prezența digitală a echipei, contribuind la site, structură, interfață și experiența online.">
+                        <div class="member-avatar">
+                            <div class="avatar-glow"></div>
+                            <div class="avatar-img">
+                                <img src="../assets/images/members/member16.jpg" alt="Member" class="member-photo">
+                            </div>
+                        </div>
+                        <h4>Web Developer</h4>
+                        <p>Website & Digital</p>
+                    </div>
+                    <div class="team-member" onclick="openTeamMemberFromCard(this)"
+                        data-name="Departament Hardware"
+                        data-role="Asamblare"
+                        data-photo="../assets/images/cata2.png"
+                        data-description="Bună ziua! Mă numesc Cătălin și sunt de 1 an în echipă. Rolul meu
+este de a transforma modelele 3D într-un robot real, de înaltă
+performanță. Mă ocup de procesul de construire și organizez testele
+pe teren, unde ajut robotul să-și atingă limita maximă pentru a vedea
+cum rezistă la impact și uzură în condiții reale de concurență. Eu sunt
+unul dintre cei care verifică fiecare piesă pentru a se asigura că
+funcționează și transformă feedback-ul tehnologic în remedieri
+rapide. Scopul meu este să garantez o stabilitate impecabilă în fiecare
+secundă a competiției,menținând un echilibru constant între viteza
+de execuție și integritatea structurală a robotului, astfel încât să
+performăm fără eroare în meciuri decisive.
+">
+                        <div class="member-avatar">
+                            <div class="avatar-glow"></div>
+                            <div class="avatar-img">
+                                <img src="../assets/images/cata1.png" alt="Member" class="member-photo">
+                            </div>
+                        </div>
+                        <h4>Cătălin</h4>
+                        <p>Departament Hardware</p>
+                    </div>
+                    <div class="team-member" onclick="openTeamMemberFromCard(this)"
+                        data-name="Departament Hardware"
+                        data-role="Proiectare"
+                        data-photo="../assets/images/huruba1.png"
+                        data-description="Salut! Numele meu este Rareș și sunt membru al
+acestei echipe de 2 ani.
+Rolul meu este să transform cerințele strategice
+ale fiecărui sezon în modele digitale funcționale
+și bine gândite. Mă ocup de proiectarea
+generală, unde urmăresc dimensiunile critice și
+distribuția greutății pentru a obține un echilibru
+bun între agilitate și rezistență. Folosind Fusion
+360, dezvolt soluții mecanice eficiente și previn
+erorile de proiectare încă din etapa virtuală,
+economisind timp și materiale. Astfel, contribui
+la o bază tehnică solidă și la o documentație
+clară pentru întreaga echipă.">
+                        <div class="member-avatar">
+                            <div class="avatar-glow"></div>
+                            <div class="avatar-img">
+                                <img src="../assets/images/huruba2.png" alt="Member" class="member-photo">
+                            </div>
+                        </div>
+                        <h4>Rares</h4>
+                        <p>Departament Hardware</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <div id="teamModal" class="team-modal">
+        <div class="modal-overlay" data-close-modal onclick="closeTeamModal()"></div>
+        <div class="modal-content">
+            <button type="button" class="modal-close" data-close-modal onclick="closeTeamModal()" aria-label="Închide fereastra">×</button>
+            <div class="modal-body">
+                <div class="modal-avatar">
+                    <img id="modalPhoto" src="" alt="Team Member" class="modal-photo">
+                    <div class="modal-avatar-glow"></div>
+                </div>
+                <div class="modal-info">
+                    <h3 id="modalName">Nume Membru</h3>
+                    <p id="modalRole">Rol</p>
+                    <div id="modalDescription" class="modal-description">
+                        <p>Descriere detaliată despre membrul echipei...</p>
+                    </div>
+                    <div class="modal-skills" id="modalSkills" style="display: none;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <section id="contact" class="contact">
         <div class="container">
@@ -306,22 +859,21 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="logo.png" alt="Delta Force Robotics" class="footer-logo-img">
+                    <img src="../assets/images/logo.png" alt="Delta Force Robotics" class="footer-logo-img">
                     <span class="logo-text">DELTA FORCE ROBOTICS</span>
                 </div>
                 <div class="footer-social">
-                    <span class="social-link">📘</span>
-                    <span class="social-link">📷</span>
-                    <span class="social-link">🐦</span>
-                    <span class="social-link">💼</span>
+                    <a href="#" class="social-link">📘</a>
+                    <a href="#" class="social-link">📷</a>
+                    <a href="#" class="social-link">🐦</a>
+                    <a href="#" class="social-link">💼</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Delta Force Robotics. All rights reserved.</p>
+                <p>&copy; 2024 Delta Force Robotics. Toate drepturile rezervate.</p>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
